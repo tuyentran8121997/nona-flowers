@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Nona - Ý nghĩa loài hoa</title>
+		<link rel="shortcut icon" type="image/png" href="../Images/home/favicon.png"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="../CSS/ynghiahoa.css">
+		<script src="../JS/search.js" ></script>
+	</head>
+	<body>
+		<header>
+			<!-- Top menu -->
+			<div class="top-menu" id="top-menu">
+				<div class="logo float-left">
+					<a href="home.html"><img src="../Images/home/logo.png"></a>
+				</div>
+				<div class="menu-center">
+					<nav>
+		          		<ul>
+							<li>
+								<a href="home.html">
+									<div class="icon"><i class="fa fa-home" aria-hidden="true"></i></div>
+									<div class="name">Trang chủ</div>
+								</a>
+							</li>
+							<li>
+								<a href="gioithieu.html">
+									<div class="icon"><i class="fa fa-users" aria-hidden="true"></i></div>
+									<div class="name">Giới thiệu</div>
+								</a>
+							</li>
+							<li>
+								<a href="lienhe.html">
+									<div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+									<div class="name">Liên hệ</div>
+								</a>
+							</li>
+						</ul>
+		        	</nav>
+	        	</div>
+				<div class="search">
+					<form autocomplete="off" onsubmit="return search()">
+          <input type="text" placeholder="Nhập để tìm kiếm..." id="searchInput">
+          <input type="submit" data-toggle="modal" data-target=".bd-example-modal-lg" value="Tìm kiếm">
+        </form>
+				</div>
+			</div>
+			<!-- top menu ket thuc -->
+			<!-- main menu -->
+			<nav class="navbar navbar-expand-xl navbar-light justify-content-center">
+	    		<div class="container">
+		        	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar10">
+		            	<span>MENU </span><span class="navbar-toggler-icon"></span>
+		        	</button>
+			        <div class="navbar-collapse collapse text-center" id="navbar10">
+			            <ul class="navbar-nav">
+			                <li class="nav-item">
+				         		<a class="nav-link" href="nghethuat.html">nghệ thuật cắm hoa</a>
+				      		</li>
+				      		<li class="nav-item">
+				         		<a class="nav-link" href="huongdan.html">hướng dẫn cắm hoa</a>
+				      		</li>
+				      		<li class="nav-item">
+				        	 	<a class="nav-link" href="ynghiahoa.html">ý nghĩa hoa</a>
+				      		</li>
+				      		<li class="nav-item">
+				        	 	<a class="nav-link" href="tintuc.html">tin tức - sự kiện</a>
+				      		</li>
+				      		<li class="nav-item">
+				        	 	<a class="nav-link" href="cuocthicamhoa.html">cuộc thi cắm hoa</a>
+				      		</li>
+				      		<li class="nav-item">
+				        	 	<a class="nav-link" href="kinhnghiem.html">góc kinh nghiệm</a>
+				      		</li>
+			            </ul>
+			        </div>
+	    		</div>
+			</nav>
+		</header>
+		<!-- End header -->
+
+		<!-- Body content -->
+
+		<section>
+			<div class="container">
+				<div class="jumbotron">
+			     	<h2 class="title-text">Ý NGHĨA HOA</h2>
+			        <p class="text-center">Mỗi loài hoa đều mang vẻ đẹp riêng nhưng cũng có ý nghĩa riêng trong cuộc sống. Vì vậy có những loài hoa tượng trưng cho tình bạn nhưng 
+			        có những loài hoa lại là biểu tượng của tình yêu. Ý nghĩa các loài hoa phổ biến, thông dụng và thường gặp nhất sẽ được chúng tôi giới thiệu trong
+			         bài viết này để bạn hiểu rõ hơn khi muốn chọn hoa cho người thân yêu của mình.</p>
+     			</div>
+				<div class="row text-center">	
+					<!-- hoa hồng -->
+					<div class="col-md-6 col-xl-4 mb-4">
+						<div class="card" data-toggle="modal" data-target="#hoahong">
+							<img class="card-img-top" src="../Images/ynghiahoa/hoahong/hoahong.jpg" alt="hoa hong">
+							<div class="card-body">
+								<h4 class="card-title">Hoa hồng</h4>
+							</div>
+						</div>
+					</div>
+					
+					<!-- hoa cúc -->
+					<div class="col-md-6 col-xl-4 mb-4">
+						<div class="card" data-toggle="modal" data-target="#hoacuc">
+							<img class="card-img-top" src="../Images/ynghiahoa/hoacuc/hoacuc.jpg" alt="hoa cuc">
+							<div class="card-body">
+								<h4 class="card-title">Hoa cúc</h4>
+							</div>
+						</div>
+					</div>
+					
+					<!-- hoa bách hợp -->
+					<div class="col-md-6 col-xl-4 mb-4">
+						<div class="card" data-toggle="modal" data-target="#hoabachhop">
+							<img class="card-img-top" src="../Images/ynghiahoa/hoabachhop/hoabachhop.jpg" alt="hoa bach hop">
+							<div class="card-body">
+								<h4 class="card-title">Hoa bách hợp</h4>
+							</div>
+						</div>
+					</div>
+
+					<!-- hoa hoa mẫu đơn -->
+					<div class="col-md-6 col-xl-4 mb-4">
+						<div class="card" data-toggle="modal" data-target="#hoamaudon">
+							<img class="card-img-top" src="../Images/ynghiahoa/hoamaudon/hoamaudon.jpg" alt="hoa mau don">
+							<div class="card-body">
+								<h4 class="card-title">Hoa mẫu đơn</h4>
+							</div>
+						</div>
+					</div>
+					
+					<!-- hoa sen -->
+					<div class="col-md-6 col-xl-4 mb-4">
+						<div class="card" data-toggle="modal" data-target="#hoasen">
+							<img class="card-img-top" src="../Images/ynghiahoa/hoasen/hoasen.jpg" alt="hoa sen">
+							<div class="card-body">
+								<h4 class="card-title">Hoa sen</h4>
+							</div>
+						</div>
+					</div>
+					
+					<!-- hoa lan -->
+					<div class="col-md-6 col-xl-4 mb-4">
+						<div class="card" data-toggle="modal" data-target="#hoalan">
+							<img class="card-img-top" src="../Images/ynghiahoa/hoalan/hoalan.jpg" alt="hoa lan">
+							<div class="card-body">
+								<h4 class="card-title">Hoa lan</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Portfolio Modals -->
+		
+		<!-- Modal 1 -->
+		<div class="modal fade" id="hoahong">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content ">
+					<div class="modal-header">		
+						<a href="../word/ynghiahoahong.docx" class="btn-main" type="button">
+							<i class="fa fa-download"></i> Tải về tài liệu
+						</a>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              				<span aria-hidden="true">&times;</span>
+            			</button>
+					</div>
+					
+					<div class="modal-body">
+						<div class="container">
+						<h2>Ý nghĩa Hoa hồng</h2>
+				          <img class="myImg" src="../Images/ynghiahoa/hoahong/1.jpg" alt="hoa hong do">
+				          <p>Hoa Hồng Đỏ mang ý nghĩa là biểu tượng của tình yêu và sự lãng mạn. Chính vì vây, hình ảnh hoa hồng đỏ có ở mọi nơi, trong nhiều tác phẩm nghệ thuật về thơ ca cũng như các phương tiện truyền thông ngày nay. Màu đỏ là màu của tình yêu, thể hiện tình cảm sâu đậm và là điều giản dị để nói “I love you. Hoa hồng đỏ giúp bạn gửi đi thông điệp vững tin và lời mời tình yêu tiến gần thêm một bước nữa. Và đôi khi chỉ một cành hoa hồng thôi cũng là câu trả lời đầy cảm xúc. Dù bất kỳ dịp nào đi nữa, hoa hồng đỏ rất khó làm ai đó từ chối!</p>
+				          <img class="myImg" src="../Images/ynghiahoa/hoahong/2.jpg" alt=" hoa hong trang">
+				          <p>Hoa Hồng Trắng thể hiện sự ngây thơ, thuần khiết. Vì thế, ý nghĩa của hoa hồng trắng là tôn vinh tình yêu trong sáng, thiêng liêng không lẫn vật chật, không bị cám dỗ bởi xác thịt, bên nhau bởi sự gắn bó của 2 tâm hồ thánh thiện. Hoa Hồng Trắng được sử dụng nhiều trong các lễ cưới, lễ đính hôn hiện nay. Một bó hoa hồng trắng không chỉ đẹp mà còn mang đến nhiều ý nghĩa đến người nhận nó. Cho dù bạn gửi hoa hồng trắng đến người nhận với lý do nào thì hãy tin rằng chúng sẽ được trân trọng như vẻ đẹp của chúng.</p>
+				          
+				          <a href="#">
+				            <img class="img-fluid" src="../Images/ynghiahoa/hoahong/3.jpg" alt="hoa hong vang">
+				          </a>
+				          
+				          <p>Hoa Hồng Vàng đó là biểu tượng của tình bạn và niềm vui. Hoa Hồng vàng có mùi thơm nhẹ, nét đẹp sang trọng nên được nhiều người yêu thích. Một bó hoa hồng vàng mang đến sự ấm áp và hạnh phúc. Trái ngược ý nghĩa lãng mạn của các loài hoa hồng khác, hồng vàng chỉ mang ý nghĩa tình bạn mà thôi. Hồng vàng là món quà lý tưởng để giúp ai đó đang buồn thấy vui lên và lấy lại tinh thần.</p>
+				          
+				          <a href="#">
+				            <img class="img-fluid" src="../Images/ynghiahoa/hoahong/4.jpg" alt="hoa hong tim">
+				          </a>
+				          
+				          <p>Hoa Hồng Tím đó là sự say mê, uy nghi, tình yêu từ cái nhìn đầu tiên. Đây là giống cây hoa hồng mọc thành bụi và được trang trí trong các bữa tiệc hoàng gia. Hoa hồng tím cũng giống như hoa hồng xanh, mang nhiều ý nghĩa và được mọi người rất ưa chuộng.</p>
+				          
+						<ul>Số bông hoa hồng tặng người thân yêu mang một ý nghĩa khác nhau, đó là:
+							<li>1 bông hồng: Tình yêu tuyệt vời này chỉ dành riêng em thôi.</li>
+							<li>2 bông hồng: Tình yêu của đôi ta thật đậm sâu.</li>
+							<li>3 bông hồng: Anh yêu em.</li>
+							<li>6 bông hồng: Anh muốn thuộc về em.</li>
+							<li>9 bông hồng: Tình yêu chúng ta dành cho nhau là tình yêu vĩnh cửu.</li>
+							<li>11 bông hồng: Em là cô gái anh yêu nhất trong cuộc đời này.</li>
+							<li>12 bông hồng: Tượng trưng cho đam mê, hòa hợp và thu hút lẫn nhau.</li>
+							<li>13 bông hồng: Kẻ si tình bí mật.</li>
+							<li>24 bông hồng: Anh luôn nhớ những phút giây trìu mến mà em dành cho Anh. Em biết không, 24 giờ/ngày anh không thể nào quên được em.</li>
+							<li>33 bông hồng: Lời thổ lộ “Anh yêu em” với một tình yêu sâu sắc.</li>
+							<li>36 bông hồng: Vì em đến bên anh, anh thấy lòng mình cứ quyến luyến không thôi.</li>
+							<li>44 bông hồng: Lời hứa chân tình không bao giờ thay đổi.</li>
+							<li>50 bông hồng: Tình yêu này anh không hề hối tiếc.</li>
+							<li>56 bông hồng: Ôi, tình yêu của tôi ơi!</li>
+							<li>66 bông hồng: Cuộc tình này sẽ ra hoa kết trái.</li>
+							<li>99 bông hồng: Sự hiểu nhau sẽ giúp tình yêu mãi bền lâu.</li>
+							<li>100 bông hồng: Đôi ta sẽ yêu nhau mãi đến “đầu bạc răng long”.</li>
+							<li>101 bông hồng: Anh không yêu ai khác ngoài em.</li>
+							<li>108 bông hồng: Đồng ý lấy anh nhé!</li>
+							<li>111 bông hồng: Tình yêu bất diệt.</li>
+							<li>123 bông hồng: Tình yêu tự do.</li>
+							<li>144 bông hồng: Yêu em cả ngày lẫn đêm.</li>
+							<li>365 bông hồng: Mỗi ngày qua không ngừng nghĩ về em. Yêu em.</li>
+							<li>999 bông hồng: Tình yêu vĩnh viễn, vững bền.</li>
+							<li>1001 bông hồng: Tình yêu chân thành mãi mãi.</li>
+						</ul>
+					</div>
+				</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger text-uppercase" data-dismiss="modal">Đóng</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal 1 -->
+		
+		<!-- Modal 2 -->
+		<div class="modal fade" id="hoacuc">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content ">
+					<div class="modal-header">		
+						<a href="../word/ynghiahoacuc.docx" class="btn-main" type="button">
+							<i class="fa fa-download"></i> Tải về tài liệu
+						</a>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              				<span aria-hidden="true">&times;</span>
+            			</button>
+					</div>
+					
+					<div class="modal-body">
+						<div class="container-fluid">
+							<h2>Ý nghĩa Hoa cúc</h2>
+				        	<p>Hoa cúc có mặt trên Trái đất từ rất lâu đời và là loài hoa được nhiều người ưa thích. Bởi không chỉ có vẻ đẹp nhẹ nhàng hay mùi hương dễ chịu, mà hoa cúc còn có ý nghĩa thể hiện sự cao thượng, lạc quan, chín chắn. Hoa cúc là cây cảnh xuất hiện cách đây từ rất lâu và được cả thế giới ưa chuộng. Tuy nhiên, nguồn gốc và ý nghĩa của hoa cúc có khá nhiều giá thiết được đặt ra..</p>
+				          	<p>Ở Trung Quốc, giống như nguồn gốc xuất xứ của nó, ý nghĩa của hoa cúc là biểu tượng của sự trường tồn. Đến nay, hình bông hoa cúc vẫn được đúc trên đồng xu 1 Nhân dân tệ.</p>
+				          	<p>Còn tại đất nước Mặt trời mọc, hoa cúc là biểu tượng của sự giàu có, cao sang, quyền quí. Đặc biệt, hoa cúc thường được in trên quốc huy, huy chương.</p>
+				          	<p>Trong khi đó, ở Việt Nam, hình ảnh hoa cúc gắn liền với sự hiếu thảo, yêu thương cha mẹ.</p>
+				          	<p>Tuy nhiên, hiện nay, hoa cúc có rất nhiều màu sắc khác nhau như: cúc trắng, cúc vàng, cúc họa mi, cúc vạn thọ,…. Và mỗi loại hoa cúc lại có một ý nghĩa, thông điệp khác nhau.</p>
+				          	<a href="#">
+				            	<img class="img-fluid" src="../Images/ynghiahoa/hoacuc/1.jpg" alt="hoa cuc trang">
+				          	</a>
+				          	<p>Ý nghĩa hoa cúc trắng: Tượng trưng cho lòng cao thượng, sự chân thực. </p>
+				          	<a href="#">
+				            	<img class="img-fluid" src="../Images/ynghiahoa/hoacuc/2.jpg" alt=" hoa cuc vang">
+				          	</a>
+				          	<p>Ý nghĩa của cúc vàng: Thể hiện lòng kính mến, niềm vui, sự hân hoan.</p>
+				          	<a href="#">
+				            	<img class="img-fluid" src="../Images/ynghiahoa/hoacuc/3.jpg" alt="hoa cuc tim">
+				          	</a>
+				          	<p>Ý nghĩa của hoa cúc tím: Bày tỏ sự lưu luyến khi phải chia tay, chia ly.</p>
+				          	<a href="#">
+				            	<img class="img-fluid" src="../Images/ynghiahoa/hoacuc/4.jpg" alt="hoa cuc van tho">
+				          	</a>
+				          	<p>Ý nghĩa cúc vạn thọ: Gửi gắm nỗi buồn, thất vọng.</p>
+				          	<a href="#">
+				            	<img class="img-fluid" src="../Images/ynghiahoa/hoacuc/5.jpg" alt="hoa cuc dai doa">
+				          	</a>
+				          	<p>Ý nghĩa cúc đại đóa: Mang theo sự lạc quan, vui vẻ.</p>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger text-uppercase" data-dismiss="modal">Đóng</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal 2 -->
+		
+		<!-- Modal 3 -->
+		<div class="modal fade" id="hoabachhop">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content ">
+					<div class="modal-header">		
+						<a href="../word/ynghiahoabachhop.docx" class="btn-main" type="button">
+							<i class="fa fa-download"></i> Tải về tài liệu
+						</a>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              				<span aria-hidden="true">&times;</span>
+            			</button>
+					</div>
+					
+					<div class="modal-body">
+						<div class="container-fluid">
+							<h2>Ý nghĩa Hoa bách hợp</h2>
+				        	<p>Bách hợp là bông hoa rất quan trọng và ý nghĩa đối với Cơ Đốc giáo, biểu tượng cho sự trinh trắng và đức hạnh. Trong Kinh Thánh, Lily được nhắc đến bằng cái tên "vị tông đồ khoác áo choàng trắng hy vọng" (the white robed apostles of hope). Lily mọc trong vườn Gethsemane sau khi Chúa bị đóng đinh trên thập tự giá. Easter Lily được cắm trong nhà thờ suốt mùa lễ Phục Sinh để mừng sự hồi sinh của Chúa Jesus.</p>
+					        <p>Ngoài ý nghĩa chung là tượng trưng cho sự hạnh phúc, hòa thuận và quyền lực thì mỗi loại hoa bách hợp cũng mang một ý nghĩa biểu trưng riêng tùy thuộc vào màu sắc của chúng.</p>
+					        <a href="#">
+					           	<img class="img-fluid" src="../Images/ynghiahoa/hoabachhop/1.jpg" alt=" hoa bach hop">
+					        </a>
+							<p>- Hoa bách hợp trắng là biểu tượng cho sự thanh cao, nét kiêu sa và sự trong trắng đức hạnh của người con gái. Chính vì vậy, hoa bách hợp trắng được chọn là loài hoa dành riêng để dâng cho đức mẹ đồng trinh</p>
+							<a href="#">
+					           	<img class="img-fluid" src="../Images/ynghiahoa/hoabachhop/2.jpg" alt=" hoa bach hop">
+					        </a>
+							<p>- Hoa bách hợp vàng lại là loài hoa đại diện cho sự biết ơn và hạnh phúc.  Ngoài ra, cây bách hợp vàng còn đại diện cho những người đàn ông ga-lăng, luôn sẵn lòng giúp đỡ người khác.</p>
+							<a href="#">
+					           	<img class="img-fluid" src="../Images/ynghiahoa/hoabachhop/3.jpg" alt=" hoa bach hop">
+					        </a>
+							<p>- Hoa bách hợp màu cam lại là loài hoa dùng để thể hiện sự căm hờn và thù hận. Thường được dùng tặng cho những kẻ phản bội trong tình yêu.</p>
+							<a href="#">
+					           	<img class="img-fluid" src="../Images/ynghiahoa/hoabachhop/4.jpg" alt=" hoa bach hop">
+					        </a>
+							<p>- Hoa bách hợp tiger (Lily tiger) có màu hồng trắng hoặc màu đỏ được xem là biểu tượng của sự giàu sang và lòng kiêu hãnh. </p>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger text-uppercase" data-dismiss="modal">Đóng</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal 3 -->
+		
+		<!-- Modal 4-->
+		<div class="modal fade" id="hoamaudon">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content ">
+					<div class="modal-header">		
+						<a href="../word/ynghiahoamaudon.docx" class="btn-main" type="button">
+							<i class="fa fa-download"></i> Tải về tài liệu
+						</a>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              				<span aria-hidden="true">&times;</span>
+            			</button>
+					</div>
+					
+					<div class="modal-body">
+						<div class="container-fluid">
+							<h2>Ý NGHĨA CỦA HOA MẪU ĐƠN</h2>
+					        <p>Hoa mẫu đơn có nguồn gốc từ Trung Quốc- Tây Tạng, từ cách đây khoảng 4000 năm. Vẻ đẹp của Mẫu Đơn được con người công nhận và ưa chuộng từ đó cho đến tận bây giờ. Và có lẽ, khó có loài hoa nào có thể sánh được. Hoa mẫu đơn có đường kính khá lớn, từ 20-30cm. Và có rất nhiều màu: người ta có thể say đắm trước vẻ đẹp thanh thoát của mẫu đơn trắng, có thể cảm nhận nét dịu dàng của mẫu đơn hồng, cũng thấy cả sự rực rỡ qua từng đóa mẫu đơn màu đỏ, màu vàng...<p>
+					        <p>Khác với hoa Hồng, mẫu đơn mang trên mình một ý nghĩa chung, và theo từng vùng đất nó đến.</p>
+					 		<a href="#">
+					            <img class="img-fluid" src="../Images/ynghiahoa/hoamaudon/1.jpg" alt=" hoa mau don">
+					        </a>
+							<p>Ở Trung Quốc - quê hương của hoa mẫu đơn- thì loài hoa ấy được mệnh danh là "quốc sắc thiên hương", là loài hoa của sự vương giả, thanh cao và sắc đẹp bậc nhất. Tương truyền, ngày xưa chỉ có trong cung của vua chúa mới được trồng loài hoa này, nhân gian tuyệt đối không, hoa mẫu đơn cũng được người ta biết đến nhiều hơn qua những chiếc mũ đội đầu của công chúa, phi tần thời ấy. Chính bởi vậy, mà cho tới bây giờ, khi nhắc đến mẫu đơn, người ta thường nghĩ đến sự giàu sang, phú quý. Và hoa mẫu đơn cũng trở thành loài hoa vô cùng ý nghĩa để dành tặng nhân dịp khai trương, chúc mừng. Là một lời cầu chúc người nhận sẽ có được cuộc sống đong đầy, an khang, sung túc.</p>
+							<p>Ở Nhật Bản, mẫu đơn cũng được ưa chuộng bởi vẻ đẹp và thần thái độc nhất của mình. Tuy nhiên, ngoài ý nghĩa về sự vương giả, mẫu đơn tại Nhật còn được xem là loài hoa của hạnh phúc gia đình. Người ta có thể dễ dàng bắt gặp hình ảnh những bình hoa mẫu đơn hoặc những bức tranh mẫu đơn trong phòng khách của một gia đình Nhật. </p>
+							<p>Còn ở Phương Tây, hoa mẫu đơn còn có ý nghĩa là "sự e lệ". Có lẽ, đó là do cảm xúc từ những cánh hoa mỏng manh nhưng rất đỗi yêu kiều mang đến.</p>
+							<p>Và, tại Việt Nam - chúng ta tiếp nhận tất cả những ý nghĩa cao đẹp đó khi nghĩ về loài hoa này. </p>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger text-uppercase" data-dismiss="modal">Đóng</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal 4 -->
+		
+		<!-- Modal 5-->
+		<div class="modal fade" id="hoasen">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content ">
+					<div class="modal-header">		
+						<a href="../word/ynghiahoasen.docx" class="btn-main" type="button">
+							<i class="fa fa-download"></i> Tải về tài liệu
+						</a>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              				<span aria-hidden="true">&times;</span>
+            			</button>
+					</div>
+					
+					<div class="modal-body">
+						<div class="container-fluid">
+							<h2>Ý NGHĨA CỦA HOA SEN</h2>
+						    <h4>Ý nghĩa hoa sen trong Phật giáo </h4>
+						    <a href="#">
+						        <img class="img-fluid" src="../Images/ynghiahoa/hoasen/1.jpg" alt="hoa sen">
+						    </a>			   
+							<p>Hoa sen xuất hiện nhiều trong Phật giáo: Phật Quan Âm ngồi trên đài sen, khi lễ Phật hai bàn tay chắp lại làm thành hình hoa sen chưa nở - kiểu lễ Liên hoa hợp chưởng, trong các công trình phật giáo nổi tiếng như chùa Một Cột, tháp Cử Phẩm liên hoa ở chùa Bút Tháp, chùa Tây Phương,… đều thể hiện một vai trò quan trọng, ý nghĩa hoa sen nhất định đối với tín ngưỡng.</p>
+							<p>Theo đó, trong Phật giáo, hoa sen được biết đến với sự tinh khiết, thức tỉnh và trung thành bởi vì nó mọc lên từ những vùng nước bùn lầy, hôi bẩn song lại giữ được bản thân hoàn toàn trong sạch. Trong thần thoại Ai Cập, hoa sen được xem như một dấu hiệu của sự tái sinh với việc phá vỡ bề mặt nước mỗi buổi sáng cũng gợi lên ước muốn vươn lên đón ánh mặt trời, điều này được liên tưởng đến sự giác ngộ hoặc khả năng nhận ra Phật tính của con người.</p>        
+						    <p>Hoa sen có nhiều màu sắc khác nhau, và mỗi màu sắc thì lại mang một ý nghĩa riêng biệt:</p>
+							<p>- Hoa sen xanh: Biểu tượng của tinh thần về trí tuệ và kiến ​​thức. Trong nghệ thuật Phật giáo, hoa sen xanh luôn được thể như một phần mở và và sẽ không bao giờ quan sát thấy phần trung tâm.</p>
+							<p>- Hoa sen trắng: Đây là đại diện cho một trạng thái tinh thần tinh khiết, của sự hoàn hảo tinh thần. Nó cũng liên quan đến sự tịnh tâm bản chất của một người.</p>
+							<p>- Hoa sen tím: Màu hoa này có sự liên quan với các giáo phái huyền bí. Nó có thể được hiển thị như là một bông hoa nở hoặc búp hoa. Bốn cánh hoa sen tím là đại diện cho một trong những lời dạy của Đức Phật dẫn đến thức tỉnh bản thân và được coi là một trong những sự thật cao quý.</p>
+							<p>- Hoa sen hồng: Đây là hoa sen tối cao và được coi là hoa sen đích thực của Đức Phật.</p>
+							<p>- Hoa sen đỏ: Hoa sen này tượng trưng cho trái tim và ý nghĩa của nó có liên quan đến tình yêu và từ bi.</p>  
+						    <h4>Ý nghĩa hoa sen trong tình yêu</h4>
+						    <a href="#">
+						        <img class="img-fluid" src="../Images/ynghiahoa/hoasen/2.jpg" alt="hoa sen">
+						    </a>
+							<p>Hoa sen cũng chính là biểu tượng của sự hoàn hảo, thuần khiết, tượng trưng cho bản chất nguyên nguyên thủy của trái tim. Hoa là hình ảnh đại diện cho tình tình yêu trong sáng, thủy chung, sự đam mê trong tình yêu và không vướng phải những sai trái.</p>
+						 	<p>Trong đó, hoa sen màu đỏ là đại diện lớn nhất. Theo quan niệm phong thủy, nếu bạn đang mong muốn có một tình yêu chân thực trong đời và sắp tới muốn tiến đến một cuộc hôn nhân hạnh phúc, nên dùng biểu tượng hoa sen hoặc trưng hoa sen trong nhà, ở môi trường làm việc. Như vậy sẽ mang lại nhiều sự thuận lợi và may mắn.</p>
+							<h4>Ý nghĩa hoa sen trong phong thủy</h4>
+							<a href="#">
+						        <img class="img-fluid" src="../Images/ynghiahoa/hoasen/3.jpg" alt="hoa sen">
+						    </a>
+							<p>Trong thuật phong thủy, từ xa xưa đã sử dụng hình ảnh các loài hoa để bổ trợ nguồn khí tốt cho gia chủ mà ngôi nhà. Có nhiều loài hoa đẹp với những ý nghĩa sâu sắc và hoa sen là một trong những loài hoa mang nhiều ý nghĩa phong thủy vô cùng đặc biệt.</p>
+							<p>Hoa sen tượng trưng cho sự thanh cao, thoát tục, sống trong bùn đen nhưng luôn giữ được sự tinh khiết. Khi trưng bày các vật phẩm trong nhà như đĩa sen, cành sen, đèn thờ hoa sen… thì sẽ khiến cho không gian trở nên ấm cúng, thanh tịnh và nhẹ nhàng hơn.</p>
+							<p>Bên cạnh đó, việc treo tranh có hình hoa sen trong nhà cũng có tác dụng điều hoà khí vượng, tăng cường những nguồn năng lượng về sức khoẻ cho ngôi nhà, giúp gia chủ gỡ bỏ mọi ưu phiền, tĩnh tâm, an hưởng hạnh phúc.</p>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger text-uppercase" data-dismiss="modal">Đóng</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal 5-->
+		
+		<!-- Modal 6 -->
+		<div class="modal fade" id="hoalan">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content ">
+					<div class="modal-header">		
+						<a href="../word/ynghiahoalan.docx" class="btn-main" type="button">
+							<i class="fa fa-download"></i> Tải về tài liệu
+						</a>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              				<span aria-hidden="true">&times;</span>
+            			</button>
+					</div>
+					
+					<div class="modal-body">
+						<div class="container-fluid">
+							<h2>Ý NGHĨA CỦA HOA LAN</h2>
+							<a href="#">
+				            	<img class="img-fluid" src="../Images/ynghiahoa/hoalan/1.jpg" alt="hoa lan">
+				          	</a>
+				          	<p>Hoa lan là họ hoa lớn nhất trong hệ thực vật với hơn 25.000 loài và hơn 100.000 giống. Chúng thường được trồng làm cây trong nhà hoặc cây cảnh. Nhưng không phải tất cả các loài lan đều mang nét đẹp của vùng nhiệt đới. Chúng ta có thể tìm thấy những loài hoa lan hoang dại mọc và phát triển ở khắp nơi trên thế giới nhưng ngoại trừ Nam Cực. Những bông hoa này được biết đến nhiều về việc khó trồng, lý do có thể là ở nhu cầu của chúng đối với ánh sáng phải được sàng lọc và độ ẩm tương đối cao. Nhiều giống loài, chẳng hạn như Lan Hồ Điệp (Phalaenopsis – chi Lan Hồ Điệp) thật đáng ngạc nhiên lại rất dễ nuôi trồng để làm cây cảnh trong nhà.</p>
+				          	<h4>Nguồn gốc tên gọi của hoa lan</h4>
+				          	<a href="#">
+				            	<img class="img-fluid" src="../Images/ynghiahoa/hoalan/2.jpg" alt="hoa lan">
+				          	</a>
+				 			<p>Cái tên hoa lan – Orchid (Orchidaceae family – họ Lan) xuất phát từ tiếng orchis trong ngôn ngữ Hi Lạp, có nghĩa là tinh hoàn. Phần củ tươi ngầm dưới mặt đất của chúng có hình dạng giống với tinh hoàn, ít nhất đó là những gì mà nhà thực vật học người Hi Lạp đã nghĩ vào thời điểm đó.</p>
+				 			<p>Loài lan Hồ Điệp còn thường được biết đến với tên gọi là Lan Bướm, cái tên này có được là do sự nhầm lẫn trong việc nhận dạng. Khi nhà tự nhiên học người Thụy Điển Peter Osbeck theo dõi chúng dưới cặp kính dã ngoại của mình khi đến thăm Java vào giữa những năm 1750, ông đã nghĩ rằng chúng là một nhóm bướm đêm. Mặc dù trong vòng 75 năm tiếp theo chúng chưa hề có được một cái tên chính thức , nhưng cái tên phổ biến là lan bướm đã thực sự tồn tại. 
+				            </p>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger text-uppercase" data-dismiss="modal">Đóng</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal 6 -->
+		</section>
+
+		<!-- scroll on top -->
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button>
+
+		<!-- Footer -->
+		<footer class="page-footer teal pt-4">
+			<!-- text-md-left căn lề trái cho khung nhìn size medium -->
+			<div class="container text-center text-md-left">
+			    <!-- Grid row -->
+			    <div class="row">
+			      <!-- Grid column -->
+			      	<div class="col-md-6 mt-md-0 mt-3">
+			        	<!-- Content -->
+			        	<h4>NONA</h4>
+			        	<p>Chúng tôi lưu trữ các giá trị, cũng như nét đẹp thuộc về thế giới loài hoa. 
+			        	Sự thành công, thỏa mãn của mọi đối tượng có liên quan đến doanh nghiệp là một trong những bậc thang chắc chắn để doanh nghiệp chúng tôi đi đến đỉnh cao của sự phát triển.</p>
+			      	</div>
+				    <!-- thanh kẻ ngang d-md-none size medium không hiển thị -->    
+				    <hr class="clearfix w-100 d-md-none pb-3">
+				    <!-- thanh kẻ ngang -->
+				    <div class="col-md-6 mb-md-0 mb-3">
+			        	<!-- Content -->
+			        	<h4>Nhận Bài Viết Mới</h4>
+			        	<p>Chúng tôi sẽ thông báo cho bạn mỗi khi có bài viết hoặc tin tức mới</p>
+			        	<div class="subscribe-form">
+			            	<form class="group">
+			              		<input type="email" value="" name="EMAIL" class="email" placeholder="Email" required="">
+			              		<input type="submit" name="subscribe" value="Đăng ký">
+			            	</form>
+			       		</div>
+			      	</div>
+			      	<hr class="clearfix w-100 d-md-none pb-3">
+			      	<!-- Grid column -->
+			    </div>
+			    <!-- Grid row -->
+			</div>
+			<div class="mt-4">
+			    <!-- icon liên kết mạng xã hội -->
+			    <ul class="list-unstyled list-inline text-center">
+			    	<!-- mx-1 set margin left và right 1($spacer * .25 rem) -->
+			      	<li class="list-inline-item">
+			        	<a class="mx-1" href="#"><i class="fa fa-facebook-square"></i></a>
+			      	</li>
+			      	<li class="list-inline-item">
+			        	<a class="mx-1" href="#"><i class="fa fa-twitter"></i></a>
+			      	</li>
+			      	<li class="list-inline-item">
+			        	<a class="mx-1" href="#"><i class="fa fa-google-plus"></i></a>
+			      	</li>
+			      	<li class="list-inline-item">
+			        	<a class="mx-1" href="#"><i class="fa fa-instagram"></i></a>
+			      	</li>
+			    </ul>
+			</div>
+			<div class="footer-copyright text-center pb-3"><p>© 2019 Copyright By Nona Flower</p></div>
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	  	<script type="text/javascript">
+	  		window.onscroll = function(){scrollFunction()};
+	  		function scrollFunction(){
+	  			if (document.body.scrollTop>20 || document.documentElement.scrollTop>20) {
+	  				document.getElementById("myBtn").style.display = "block";
+	  			}else{
+	  				document.getElementById("myBtn").style.display = "none";
+	  			}
+	  		}
+	  		function topFunction(){
+	  			document.body.scrollTop = 0;
+	  			document.documentElement.scrollTop = 0;
+	  		}
+	  	</script>
+	</body>
+</html>

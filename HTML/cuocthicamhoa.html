@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Chào mừng đến với NONA</title>
+		<link rel="shortcut icon" type="image/png" href="../Images/home/favicon.png"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="../CSS/cuocthicamhoa.css">
+		<script src="../JS/search.js" ></script>
+	</head>
+	<body>
+		<header>
+			<!-- Top menu -->
+			<div class="top-menu" id="top-menu">
+				<div class="logo float-left">
+					<a href="home.html"><img src="../Images/home/logo.png"></a>
+				</div>
+				<div class="menu-center">
+					<nav>
+		          		<ul>
+							<li>
+								<a href="home.html">
+									<div class="icon"><i class="fa fa-home" aria-hidden="true"></i></div>
+									<div class="name">Trang chủ</div>
+								</a>
+							</li>
+							<li>
+								<a href="gioithieu.html">
+									<div class="icon"><i class="fa fa-users" aria-hidden="true"></i></div>
+									<div class="name">Giới thiệu</div>
+								</a>
+							</li>
+							<li>
+								<a href="lienhe.html">
+									<div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+									<div class="name">Liên hệ</div>
+								</a>
+							</li>
+						</ul>
+		        	</nav>
+	        	</div>
+				<div class="search">
+					<form autocomplete="off" onsubmit="return search()">
+          <input type="text" placeholder="Nhập để tìm kiếm..." id="searchInput">
+          <input type="submit" data-toggle="modal" data-target=".bd-example-modal-lg" value="Tìm kiếm">
+        </form>
+				</div>
+			</div>
+			<!-- top menu ket thuc -->
+			<!-- main menu -->
+			<nav class="navbar navbar-expand-xl navbar-light justify-content-center">
+	    		<div class="container">
+		        	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar10">
+		            	<span>MENU </span><span class="navbar-toggler-icon"></span>
+		        	</button>
+			        <div class="navbar-collapse collapse text-center" id="navbar10">
+			            <ul class="navbar-nav">
+			                <li class="nav-item">
+				         		<a class="nav-link" href="nghethuat.html">nghệ thuật cắm hoa</a>
+				      		</li>
+				      		<li class="nav-item">
+				         		<a class="nav-link" href="huongdan.html">hướng dẫn cắm hoa</a>
+				      		</li>
+				      		<li class="nav-item">
+				        	 	<a class="nav-link" href="ynghiahoa.html">ý nghĩa hoa</a>
+				      		</li>
+				      		<li class="nav-item">
+				        	 	<a class="nav-link" href="tintuc.html">tin tức - sự kiện</a>
+				      		</li>
+				      		<li class="nav-item">
+				        	 	<a class="nav-link" href="cuocthicamhoa.html">cuộc thi cắm hoa</a>
+				      		</li>
+				      		<li class="nav-item">
+				        	 	<a class="nav-link" href="kinhnghiem.html">góc kinh nghiệm</a>
+				      		</li>
+			            </ul>
+			        </div>
+	    		</div>
+			</nav>
+		</header>
+		<!-- End header -->
+
+		<!-- Body content -->
+
+		
+		<div class="event">
+			<h1>CUỘC THI CẮM HOA 2019</h1>
+			<div id="clock"></div>
+		</div>
+
+
+		<section>
+		    <div class="container">
+		      <div class="row">
+		            <div class="col-sm-6 register-left">
+		              <img src="../Images/cuocthicamhoa/arrow.PNG">
+		              <h2>Tham gia nào</h2>
+		              <p>Đăng ký liền tay nhận ngay giải thưởng<br>Tổng giải thưởng lên đến hàng chục triệu đồng</p>
+		              <a class="my-link" href="sukien1.html">Thể lệ cuộc thi</a>
+		            </div>
+		            <div class="col-sm-6 register-right">
+		              <h2>Đăng ký</h2>
+		              <div class="register-form">
+		                <form  onsubmit="return myAlert()">
+		                  <div class="form-group">
+		                    <input type="text" class="form-control" placeholder="Họ tên" required>
+		                  </div>
+		                  <div class="form-group">
+		                    <label class="radio inline"> 
+		                      <input type="radio" name="gender" value="male" checked>
+		                      <span> Nam </span> 
+		                    </label>
+		                    <label class="radio inline"> 
+		                      <input type="radio" name="gender" value="female">
+		                      <span> Nữ </span> 
+		                    </label>
+		                  </div>
+		                  <div class="form-group">
+		                    <input type="text" class="form-control" placeholder="Tài khoản" required>
+		                  </div>
+		                  <div class="form-group">
+		                    <input type="Password" class="form-control" placeholder="Mật khẩu" required>
+		                  </div>
+		                  <div class="form-group">
+		                    <input type="Password" class="form-control" placeholder="Nhập Lại Mật khẩu" required>
+		                  </div>
+		                  <div class="form-group">
+		                    <input type="Email" class="form-control" placeholder="Email" required>
+		                  </div>
+		                  <div class="form-group">
+		                    <input type="text" class="form-control" placeholder="Số điện thoại" required>
+		                  </div>                  
+		                  <div class="form-group">
+		                    <select class="form-control" required>
+		                      <option value="" selected disabled="">Chọn câu hỏi bảo vệ</option>
+		                      <option value="a">Con vật bạn ghét nhất?</option>
+		                      <option value="b">Bộ phim bạn yêu thích nhất?</option>
+		                      <option value="c">Tên thú cưng của bạn?</option>
+		                      <option value="d">Tên riêng của bạn là gì?</option>
+		                    </select>
+		                  </div>
+		                  <div class="form-group">
+		                    <input type="text" class="form-control" placeholder="Câu trả lời" value="" required>
+		                  </div>
+		                  <div class="form-group">
+		                    <input type="submit" value="Đăng Ký" class="myButton">
+		                  </div>
+		              </form>
+		              </div>
+		            </div>
+		          
+		      </div>
+		    </div>
+		  </section>
+		<!-- scroll on top -->
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button>
+
+		<!-- Footer -->
+		<footer class="page-footer teal pt-4">
+			<!-- text-md-left căn lề trái cho khung nhìn size medium -->
+			<div class="container text-center text-md-left">
+			    <!-- Grid row -->
+			    <div class="row">
+			      <!-- Grid column -->
+			      	<div class="col-md-6 mt-md-0 mt-3">
+			        	<!-- Content -->
+			        	<h4>NONA</h4>
+			        	<p>Chúng tôi lưu trữ các giá trị, cũng như nét đẹp thuộc về thế giới loài hoa. 
+			        	Sự thành công, thỏa mãn của mọi đối tượng có liên quan đến doanh nghiệp là một trong những bậc thang chắc chắn để doanh nghiệp chúng tôi đi đến đỉnh cao của sự phát triển.</p>
+			      	</div>
+				    <!-- thanh kẻ ngang d-md-none size medium không hiển thị -->    
+				    <hr class="clearfix w-100 d-md-none pb-3">
+				    <!-- thanh kẻ ngang -->
+				    <div class="col-md-6 mb-md-0 mb-3">
+			        	<!-- Content -->
+			        	<h4>Nhận Bài Viết Mới</h4>
+			        	<p>Chúng tôi sẽ thông báo cho bạn mỗi khi có bài viết hoặc tin tức mới</p>
+			        	<div class="subscribe-form">
+			            	<form class="group">
+			              		<input type="email" value="" name="EMAIL" class="email" placeholder="Email" required>
+			              		<input type="submit" name="subscribe" value="Đăng ký">
+			            	</form>
+			       		</div>
+			      	</div>
+			      	<hr class="clearfix w-100 d-md-none pb-3">
+			      	<!-- Grid column -->
+			    </div>
+			    <!-- Grid row -->
+			</div>
+			<div class="mt-4">
+			    <!-- icon liên kết mạng xã hội -->
+			    <ul class="list-unstyled list-inline text-center">
+			    	<!-- mx-1 set margin left và right 1($spacer * .25 rem) -->
+			      	<li class="list-inline-item">
+			        	<a class="mx-1" href="#"><i class="fa fa-facebook-square"></i></a>
+			      	</li>
+			      	<li class="list-inline-item">
+			        	<a class="mx-1" href="#"><i class="fa fa-twitter"></i></a>
+			      	</li>
+			      	<li class="list-inline-item">
+			        	<a class="mx-1" href="#"><i class="fa fa-google-plus"></i></a>
+			      	</li>
+			      	<li class="list-inline-item">
+			        	<a class="mx-1" href="#"><i class="fa fa-instagram"></i></a>
+			      	</li>
+			    </ul>
+			</div>
+			<div class="footer-copyright text-center pb-3"><p>© 2019 Copyright By Nona Flower</p></div>
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	  	<script type="text/javascript">
+	  		window.onscroll = function(){scrollFunction()};
+	  		function scrollFunction(){
+	  			if (document.body.scrollTop>20 || document.documentElement.scrollTop>20) {
+	  				document.getElementById("myBtn").style.display = "block";
+	  			}else{
+	  				document.getElementById("myBtn").style.display = "none";
+	  			}
+	  		}
+	  		function topFunction(){
+	  			document.body.scrollTop = 0;
+	  			document.documentElement.scrollTop = 0;
+	  		}
+	  	</script>
+	  	<script src="../JS/jquery.countdown.js"></script>
+	  	<script type="text/javascript">
+		  	$('#clock').countdown('2019/08/10 15:24:50', function(event) {
+		  		$(this).html(event.strftime(''
+		  			+'<div><span>%w</span><span>Tuần</span></div>'
+		  			+'<div><span>%d</span><span>Ngày</span></div>'
+		  			+'<div><span>%H</span><span>Giờ</span></div>'
+		  			+'<div><span>%M</span><span>Phút</span></div>'
+		  			+'<div><span>%S</span><span>Giây</span></div>'
+		  		));
+		  	}).on('finish.countdown', function() {
+           		$(this).text("SỰ KIỆN ĐANG BẮT ĐẦU");
+    			});
+		</script>
+		<script type="text/javascript">
+			function myAlert() {
+  alert("Bạn đã đăng ký thành công!");
+}
+		</script>
+	</body>
+</html>
